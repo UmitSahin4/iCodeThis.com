@@ -1,0 +1,116 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0e0e0e;  
+}
+
+.container {
+    border-radius: 5px;
+    overflow: hidden;
+    background: url('https://images.pexels.com/photos/619418/pexels-photo-619418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"')no-repeat;
+    background-position: center;
+    background-size: cover; 
+    min-width: 1125px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 15px rgb(255, 89, 0);
+}
+
+.container header {
+    color: rgb(255, 89, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: rgb(255, 132, 0) 1px 0 5px;
+}
+
+.container header span {
+    font-size: 28px;
+}
+
+.container header h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 12px;
+}
+
+
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 89, 0);
+    width: 100%;
+}
+
+.countdown-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    padding: 20px;
+    min-width: 200px;
+    background-color: rgba(15, 7, 4, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.countdown-box:hover {
+    transform: scale(1.1);
+}
+
+.countdown-box .number {
+    font-size: 80px;
+}
+
+.countdown-box .text {
+    font-weight: 200;
+    color: #fff;
+}
+
+header {
+    animation: 1.5s title ease-out infinite;
+  }
+  @keyframes title {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+
+
+
+
+

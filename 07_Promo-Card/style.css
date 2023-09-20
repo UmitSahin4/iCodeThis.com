@@ -1,0 +1,109 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rouge+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.container {
+    width: 1000px;
+    height: 600px;
+    background:linear-gradient(35deg, rgba(254, 127, 205, .9), rgba(244, 117, 82, .9), rgba(254, 127, 205, .2)), url(https://c1.wallpaperflare.com/preview/479/397/288/books-bookshelf-encyclopedia-historic.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.header {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.header i {
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.header .fa-twitter:hover {
+    color:#1DA1F2; 
+    transform: scale(1.3);
+}
+
+.header .fa-facebook-f:hover {
+    color:#4267B2;
+    transform: scale(1.3);
+}
+
+.header .fa-google-plus-g:hover {
+    color:#CA3737;
+    transform: scale(1.3);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content h1 {
+    font-size: 120px;
+    font-family: 'Rouge Script', cursive;
+}
+
+.content p {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.content button {
+    padding: 18px 80px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(207, 38, 142);
+    border: none;
+    border-radius: 32px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.content button:hover {
+    background-color: transparent;
+    border: 1px solid rgb(207, 38, 142);
+    color: white;
+    transform: scale(1.1);
+}
+
+.content small {
+    font-size: 18px;
+}

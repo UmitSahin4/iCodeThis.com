@@ -1,0 +1,89 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b2231;
+    
+}
+
+.container {
+    width: 800px;
+    background-color: #121826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 15px #273354;
+    position: relative;
+}
+
+.container span {
+    color: rgba(210,137,204,1);
+    font-size: 18px;
+}
+
+.container span strong {
+    color: rgb(206, 165, 203);
+    font-size: 22px;
+}
+
+.bar {
+    height: 15px;
+    background-color: #273354;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.bar .bar-upload {
+    height: 100%;
+    background: linear-gradient(90deg, rgba(210,137,204,1) 0%, rgba(255,36,237,1) 100%);
+    border-radius: 20px;
+    width: 1%;
+}
+
+button {
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #ff24ed;
+    background-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+button:hover {
+    background-color: #ff24ed;
+    box-shadow: 0 0 10px 4px #273354;
+}
+
+.refresh {
+    color: rgba(210,137,204,1);
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: 100ms all;
+}
+
+.refresh:hover {
+    transform: rotate(180deg);
+}

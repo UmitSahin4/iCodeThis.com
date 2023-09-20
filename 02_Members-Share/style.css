@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #242641;
+}
+
+
+.container {
+    width: 680px;
+    height: 480px;
+    background-color: #2F314F;
+    padding: 40px 40px;
+    border-radius: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 15px;
+    color: #fff;
+}
+
+.menu a i {
+    margin-left: 10px;
+}
+
+.fa-rotate-left {
+    background-color: white;
+    color: #242540;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.searchbar {    
+   display: flex;
+   justify-content: flex-start;
+   background-color: #242540;
+   border-radius: 50px;
+   padding: 10px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+img{    
+    width: 40px;
+    border-radius: 100%;
+    margin: 0px 10px 0px 5px;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2F314F;
+    border-radius: 50px;
+    margin-right: 20px;
+    padding: 5px 15px 5px 0px;
+}
+
+label {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    color: #717FFF;
+}
+
+.buttons button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: #242540;
+}
+
+.send {
+    background-color: #717FFF;
+}
+

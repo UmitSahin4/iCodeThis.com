@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1e2748;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5rem;
+    border-radius: 15px;
+    width: auto;
+    /* flex-wrap: wrap; */
+}
+
+section {
+   text-align: center;
+   padding: 1.5rem;
+   max-width: 330px;
+}
+
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    
+}
+
+.card_free {
+    box-shadow: 0px 6px 24px -8px gray;
+}
+
+.card_lite {
+    box-shadow: 0px 6px 24px -8px rgba(179,114,253,1);
+}
+
+.card_pro {
+    box-shadow: 0px 6px 24px -8px rgb(255, 203, 111); 
+}
+
+.card_free header {
+    padding: 10px 50px;
+}
+
+
+.card_lite header {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(114,223,253,1) 0%, rgba(179,114,253,1) 100%);
+    border-radius: 9px;
+    padding: 10px 50px;
+    color: white;
+}
+
+.card_pro header {
+    background: linear-gradient(to right, rgb(255, 177, 196), rgb(255, 203, 111));
+    border-radius: 9px;
+    padding: 10px 50px;
+    color: white;
+}
+
+.price{
+    padding: 1.8rem 1.8rem 0 1.8rem;  
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1e2748;
+}
+
+.price::after{
+    content: "/mo";
+    font-size: 15px;
+    color: #1e2748;
+}
+
+sup {
+    font-size: 15px;
+    color: #1e2748;
+}
+
+
+.title{
+    text-transform: uppercase;
+    color: #1e2748;
+}
+
+
+.second_title {
+    margin: 1rem;
+    padding: 1rem 0;
+    color: #1e2748;
+}
+
+button {
+    white-space: nowrap;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 20px 90px;
+    text-transform: uppercase;
+    border: 1px solid #1e2748;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.active_btn {
+    background-color: #1e2748;
+    color: white;
+
+}
+
+.active_btn:hover{
+    background-color:white;
+    color: #1e2748;
+}
+
+.btn:hover{
+    background-color: #1e2748;
+    color: white;
+}
+
+section ul li {
+    list-style-type: none;
+    margin: 30px 0px;
+    text-align: left;
+    color: #1e2748;
+}
+
+.fa-check {
+    color: limegreen;
+}
+
+.fa-x {
+    color: red;
+}
+
+
+

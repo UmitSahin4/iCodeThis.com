@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}   
+
+.card {
+    width: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card .header {
+    width: 100%;
+    background-color: rgb(117, 200, 237);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    height: 300px;
+}
+
+.card .header img {
+    object-fit: cover;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    width: 80%;
+    text-transform: uppercase;
+    color: rgb(117, 200, 237);
+    font-size: 28px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+
+.content p {
+    line-height: 1.5;
+}
+
+
+.mark {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    border-top: 5px solid  rgba(53,104,126,1);
+    border-right: 5px solid  rgba(53,104,126,1);
+    border-left: 5px solid rgba(117, 200, 237, .3);
+    border-bottom: 5px solid rgba(117, 200, 237, .3);
+    position: absolute;
+    top: 248px;
+    right: 4px;
+}
+
+.mark span {
+    color: rgb(117, 200, 237); 
+}
+
+.mark span:first-child{
+    margin-bottom: -8px;
+}
+
+.mark span strong {
+    font-size: 20px;  
+}
+
+.time-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-box .time-title h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: -2px;
+    color: rgb(117, 200, 237);
+    margin-bottom: 20px;
+
+}
+
+.countdown {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.countdown-box .text{
+    color: rgb(84, 141, 167);
+}
+
+.countdown .box {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 2px solid rgb(117, 200, 237); 
+    border-radius: 5px;
+    width: 80px;
+    color: rgb(84, 141, 167);
+}
+
+
+
+
+.button {
+    background: linear-gradient(90deg, rgba(53,104,126,1) 0%, rgba(84,200,237,1) 100%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.button button {
+    font-size: 30px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    width: 300px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    transition: all 300ms linear;
+}
+
+button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgba(53,104,126,1);
+    transition: width .4s ease-in;
+  }
+
+button:hover::after{
+    width: 100%;
+}
+
+.button:hover{
+    background: linear-gradient(180deg, rgba(53,104,126,1) 0%, rgba(84,200,237,1) 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+
+
+
