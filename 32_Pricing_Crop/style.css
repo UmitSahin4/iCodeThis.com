@@ -1,0 +1,149 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: rgb(24, 24, 24);
+}
+
+
+.card {
+    background-color: rgb(52, 54, 54);
+    width: 385px;
+    height: 620px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 3px rgb(52, 54, 54);
+    transition: 100ms all;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card1:hover {
+    box-shadow: 0 0 15px 1px rgb(127, 193, 255);
+}
+.card2:hover {
+    box-shadow: 0 0 15px 1px rgb(211, 90, 209);
+}
+.card3:hover {
+    box-shadow: 0 0 15px 1px rgb(209, 50, 44);
+}
+
+.card > .top {
+    background-color: rgb(90, 90, 91);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 45%;
+    position: relative;
+}
+
+.card > .top > .price {
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 26px;
+    right: -59px;
+    width: 231px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+}
+
+.card > .top > .price1 {
+    background-color: rgb(127, 193, 255);
+    box-shadow: 0 0 15px 1px rgb(127, 193, 255);
+}
+.card > .top > .price2 {
+    background-color: rgb(211, 90, 209);
+    box-shadow: 0 0 15px 1px rgb(211, 90, 209);
+}
+.card > .top > .price3 {
+    background-color: rgb(209, 50, 44);
+    box-shadow: 0 0 15px 1px rgb(209, 50, 44);
+}
+
+.card > .top > img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.card > .top > h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: gold;
+}
+
+.card > .top > p {
+    color: white;
+    line-height: 28px;
+}
+
+.card > .bot {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 55%;
+}
+
+.card > .bot > .item{
+    display: flex;
+    align-items: center;
+}
+
+.card > .bot > .item > span {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.card > .bot > .item > svg {
+    width: 30px;
+    color: gold;
+    margin-right: 10px;
+}
+
+.card > .bot > button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(24, 24, 24);
+    color: gold;
+    font-size: 20px;
+    box-shadow: 0 0 15px rgb(24, 24, 24);
+    cursor: pointer;
+    transition: 150ms all;
+}
+
+.card1 > .bot > button:hover {
+    background-color: rgb(127, 193, 255);
+}
+.card2 > .bot > button:hover {
+    background-color: rgb(211, 90, 209);
+}
+.card3 > .bot > button:hover {
+    background-color: rgb(209, 50, 44);
+}

@@ -1,0 +1,158 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 400px;
+    min-width: 400px;
+    background-color: rgb(59, 37, 102);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.section {
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    border: 2px solid rgb(22, 174, 201);
+    border-radius: 999px;
+    padding: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+img {
+    border-radius: 999px;
+}
+
+.pro {
+    background-color: rgb(199, 170, 57);
+    padding: 2px 10px;
+    border-radius: 4px;
+    position: relative;
+    top: 0px;
+    right: 45%;
+}
+
+.pro > p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 18px;
+    color: rgb(198, 191, 184);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.city {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(198, 191, 184, 0.6);
+    margin: 5px 0 10px 0;
+}
+
+.info {
+    color: rgba(198, 191, 184, 0.6);
+    margin-bottom: 10px;
+    font-size: 12px;
+    width: 220px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 120px;
+    padding: 12px 20px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgb(22, 174, 201);
+    background-color: transparent;
+    transition: 200ms all;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.message {
+    background-color: rgb(22, 174, 201);
+    color: white;
+}
+
+.following {
+    border: 1px solid rgb(22, 174, 201);
+    color: rgb(22, 174, 201);
+}
+
+.section-2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 19, 59);
+} 
+
+header > h6 {
+    color: rgba(198, 191, 184, 0.6);
+    margin-bottom: 5px;
+}
+
+
+.skills {   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.skills > .skill {
+    padding: 5px 8px;
+    white-space: nowrap;
+    border: 1px solid rgba(198, 191, 184, 0.6);
+    border-radius: 3px;
+    color: rgb(198, 191, 184);
+    font-size: 14px;
+    cursor: pointer;
+    background-image: linear-gradient(#3b2566,#3b2566);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}   
+
+.skills > .skill:hover {
+    background-size: 100% 100%;
+}
+
