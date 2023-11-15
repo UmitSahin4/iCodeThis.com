@@ -1,0 +1,146 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(12, 12, 12);
+}
+
+
+.container {
+    background-color: rgb(22, 22, 22);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 20px;
+    min-width: 500px;
+}
+
+.card {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.card:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card > .img > img {
+    border-radius: 30px;
+    object-fit: cover; 
+}
+
+.card > .img {
+    position: relative;
+}
+
+.card > .img > .bg {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(22, 22, 22);
+    position: absolute;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > .img > .bg > .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+}
+.card > .img > .bg > .circle1 {
+    background-color: rebeccapurple;
+}
+.card > .img > .bg > .circle2 {
+    background-color: aqua;
+}
+.card > .img > .bg > .circle3 {
+    background-color: orange;
+}
+
+.card > .info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card > .info > .name {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.card > .info > .title {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+
+.card > .info > .buttons {
+    flex: 1;
+    display: flex;
+    gap: 5px;
+}
+
+.card > .info > .buttons > button {
+    width: 50%;
+    padding: 10px 30px;
+    margin-top: auto;
+    border: 1px solid tomato;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 200ms ease;
+}
+
+.card > .info > .buttons > .message {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.card > .info > .buttons > .message:hover {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: tomato;
+}
+
+.card > .info > .buttons > .follow {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: tomato;
+    color: black;
+}
+
+.card > .info > .buttons > .follow:hover {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: white;
+}

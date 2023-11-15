@@ -1,0 +1,147 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f6eba;
+    background-image: linear-gradient(90deg, #2f6eba 15%, #a250c8 46%, #2f6eba 100%);
+}
+
+
+.container {
+    width: 900px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 20px;
+}
+
+.container > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container > header > a {
+    color: #2f6eba;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.container > header > .date > h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: -0.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.container > header > .date > p {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+.container > section > .items {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container > section > .items > .item {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > section > .items > .item:last-child{
+    margin-bottom: 100px;
+}
+
+.container > section > .items > .item > img {
+    width: 100px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.container > section > .items > .item > .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.container > section > .items > .item > .info > h3 {
+    color: #2f6eba;
+    font-weight: 500;
+}
+
+.container > section > .items > .item > .info > p {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    width: 85%;
+}
+
+.container > section > .items > .item > .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.container > section > .items > .item > .buttons > .fa-xmark {
+    font-size: 25px;
+    color: #00000066;
+    cursor: pointer;
+}
+
+.container > section > .items > .item > .buttons > .price {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container > section > .items > .item > .buttons > button {
+    flex: 1;
+    padding: 10px 40px;
+    background-image: linear-gradient(80deg, #8500de 0%, #FC00FF 100%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 680px) {
+    .container {
+        width: 640px;
+    }
+
+    .container > section > .items > .item{
+        display: grid;
+        place-items: center;
+    }
+  }

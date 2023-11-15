@@ -1,0 +1,140 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+    background-color: azure;
+    padding: 40px;
+    box-shadow: 0 0 15px 1px rgb(0, 162, 255);
+}
+
+.container > .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container > .header > h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.container > section > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.container > section > ul > li {
+    width: 162px;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > section > ul > li > span {
+    font-size: 28px;
+    color: rgb(84, 110, 122);
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.container > section > ul > li > p {
+    color: gray;
+    font-size: 14px;
+}
+
+.container > section > ul > li.points{
+    border-radius: 50%;
+    background: radial-gradient(closest-side, white 89%, transparent 90% 100%), conic-gradient(rgb(30,136,229) 25%, white 0);
+}
+
+.container > section > ul > li.points > span,
+.container > section > ul > li.points > p {
+    color: black;
+
+}
+
+.container > section > ul > li.points > p {
+    font-size: 20px;
+}
+
+.container > section > h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: rgb(84, 110, 122);
+    font-weight: 500;
+}
+
+.container > section > .awards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container > section > .awards > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(136, 137, 137);
+}
+
+.container > section > .awards > div > img {
+    margin-bottom: 10px;
+}
+
+.container > section > .awards > div.goal > p {
+    color: rgb(30,136,229);
+}
+
+.container > section > .awards > div.first > p {
+    color: tomato;
+}
+
+.container > section > footer {
+    text-align: center;
+}
+
+.container > section > footer > small {
+    text-transform: uppercase;
+    color: rgb(84, 110, 122);
+    margin-bottom: 10px;
+}
+
+.container > section > footer > .bar {
+    width: 100%;
+    height: 15px;
+    border-radius: 20px;
+}
+
+.container > section > footer > .bar > .progress {
+    height: 100%;
+    width: 48%;
+    background-color: rgb(0, 162, 255);
+    border-radius: 20px;
+}
+
+
